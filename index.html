@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>craft-group</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="all_main col-12">
+                <ul class="main_header">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" class="active">ORDER SERVICES</a> </li>
+                    <li><a href="#">BEACON MARKETING</a></li>
+                </ul>
+            </div>
+            <!-- /.main_header -->
+            <div class="wrapper row">
+
+                <div class="main_photo col-6">
+                    <img src="img/head.png" alt="photo" width="100%">
+                </div>
+                <!-- /.main_photo -->
+                <div class="main_block col-md-5 col-sm-12">
+
+                    <div class="main_text">
+                        <h1>Discount for Services</h1>
+
+                        <h4 class="title_text-one">Our advertisement services cost $10 per
+                            beacon per month, and we offer wholesale
+                            discounts:</h4>
+
+                        <p class="title_text-tow">Free installation of the beacons is also an option, but then their
+                            marketing capabilities will be used by third parties also. How to
+                            Get Connected To get connected to our service or find out
+                            more information, please call us at (844)-295-0900 or purchase
+                            our service through our site at https://fdh.cloud/order/services</p>
+
+                    </div>
+                    <!-- /.main_text -->
+
+
+                </div>
+                <!-- /.wrapper -->
+            </div>
+    </header>
+
+    <section class="shopping">
+        <div class="container">
+            <h2>Choose beacons and fill in the order form?</h2>
+            <div class="cards row" id="app">
+                <div class="card col-md-3">
+                    <h4>ASENSOR</h4>
+                    <div class="photo_item">
+                        <img src="img/asensor.png" alt="asensor">
+                    </div>
+
+                    <h3>$15</h3>
+                    <p class="titel_card">ASensor is a BLE beacon with multiple advertising data formats. The BLE is a
+                        very low power 2.4G
+                        beacon information efficiently. The typical beacon battery life is radio that can transmit the
+                        1.5 year in default settings 3-Axis, 12-bit accelerometer magna aliqua.</p>
+                        <div class="cliker">
+                        <div class="buttons">
+                        <button v-on:click="plus_one">+</button>
+                        {{counter_one}}
+                        <button v-on:click="minus_one">-</button>
+                        </div> <p class="stuff">шт</p>
+                        </div>
+                    <a href="#" class="buy">BUY NOW</a>
+                </div>
+                <div class="card col-md-3">
+                    <h4>ARM Cortex - M0</h4>
+                    <div class="photo_item">
+                        <img src="img/arm.png" alt="asensor">
+                    </div>
+                    <h3>$13</h3>
+                    <p class="titel_card">ARM Cortex - M0 32-bit processor
+                        Dialog solution, long battery life
+                        Support Bluetooth Smart 4.0
+                        Builtin 1 x CR2450 battery holder Temperature sensor for environment monitoring Configurable by
+                        App AprilBeacon</p>
+                        <div class="cliker">
+                        <div class="buttons">
+                        <button v-on:click="plus_two">+</button>
+                        {{counter_two}}
+                        <button v-on:click="minus_two">-</button>
+                        </div> <p class="stuff">шт</p>
+                         </div>
+                    <a href="#" class="buy">BUY NOW</a>
+                </div>
+                <div class="card col-md-3">
+                    <h4>Estimote Proximity Beacons </h4>
+                    <div class="photo_item">
+                        <img src="img/estimote.png" alt="asensor">
+                    </div>
+                    <h3>$25</h3>
+                    <p class="titel_card">Estimote Proximity Beacons
+                        lifetime: 2 years
+                        range: up to 70 m
+                        packets: iBeacon™ or Eddystone™
+                        features: motion & temperature sensor, NFC </p>
+                        <div class="cliker">
+                        <div class="buttons">
+                        <button v-on:click="plus_three">+</button>
+                        {{counter_three}}
+                        <button v-on:click="minus_three">-</button>
+                        </div> <p class="stuff">шт</p>
+                        </div>
+                    <a href="#" class="buy">BUY NOW</a>
+                </div>
+                <div class="card col-md-3">
+                    <h4>Aprilbeacon 227L
+                        (150M Range)
+                    </h4>
+                    <div class="photo_item">
+                        <img src="img/aprilbeacon.png" alt="asensor">
+                    </div>
+                    <h3>$30</h3>
+                    <p class="titel_card">Aprilbeacon 227L (150M Range)
+                        iBeacon size: 66mm*36mm*22mm
+                        Default frequency: 900ms
+                        Setting frequency: 100ms or more
+                        System: IOS 7.0, Android 4.3
+                        Color: green iBeacon + white case</p>
+                    <div class="cliker">
+                    <div class="buttons">
+                    <button v-on:click="plus_four">+</button>
+                    {{counter_four}}
+                    <button v-on:click="minus_four">-</button>
+                    </div> <p class="stuff">шт</p>
+                    </div>
+                    <a href="#" class="buy">BUY NOW</a>
+                </div>
+            </div>
+            <!-- /.cards -->
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                counter_one: 0,
+                counter_two: 0,
+                counter_three: 0,
+                counter_four: 0
+            },
+            methods: {
+                plus_one: function (counter_one) {return this.counter_one +=1},minus_one: function (counter_one) {if (this.counter_one > 0){return this.counter_one -=1}else{return this.counter_one}},
+                plus_two: function (counter_two) {return this.counter_two +=1},minus_two: function (counter_two) {if (this.counter_two > 0){return this.counter_two -=1}else{return this.counter_two}},
+                plus_three: function (counter_three) {return this.counter_three +=1},minus_three: function (counter_three) {if (this.counter_three > 0){return this.counter_three -=1}else{return this.counter_three}},
+                plus_four: function (counter_four) {return this.counter_four +=1},minus_four: function (counter_four) {if (this.counter_four > 0){return this.counter_four -=1}else{return this.counter_four}}
+            }
+        })
+    </script>
+
+    <section class="contacts">
+        <div class="wrapper">
+            <img src="img/beacons.png" alt="">
+        </div>
+
+        <div class="container">
+        <h2>A couple of steps to make your store popular</h2>
+        <div class="steps">
+            <a href="#" class="active">STEP 1</a>
+            <a href="#">STEP 2</a>
+            <a href="#">STEP 3</a>
+        </div>
+        <p class="col-11-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+            <form action="#" class="col-7">
+                <input type="text" placeholder="Enter First Name" name="name" class="input" required>
+                <input type="text" placeholder="Enter Last Name" name="name" class="input" required>
+                <input type="email" placeholder="Enter Email" name="email" class="input" required>
+                <button type="submit" class="btn_form col-3">NEXT</button>
+            </form>
+            
+        </div>
+    </section>
+<footer>
+    <div class="photo_footer">
+        <img src="img/wave-vs-hand.png" alt="">
+    </div>
+    
+    <div class="container">
+        <div class="text_support">
+           <span> Support:  (844) 295-0900</span> </br>
+            support@frontdeskhelpers.com
+        </div>
+        <div class="icons">
+            <img src="img/Группа 2.png" alt="">
+            <img src="img/Группа 3.png" alt="">
+            <img src="img/Группа 4.png" alt="">
+            <img src="img/Группа 5.png" alt="">
+        </div>
+        <div class="terms">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Terms of Sales</p>
+        </div>
+        <div class="end">
+            <p>© 2017 FDH Cloud</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.contacts {
+  background: url("../../img/bg-contacts.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 56px;
+  padding-top: 40px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steps a {
+  text-decoration: none;
+  color: #282828;
+  font-family: 'Lato-Black',sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.steps .active {
+  background: #fff;
+  border-radius: 35px;
+  padding: 8px 25px;
+  text-align: center;
+  -webkit-box-shadow: 0 20px 17px #709f90;
+  box-shadow: 0 20px 17px #709f90;
+  margin-left: 0;
+}
+
+.steps a:hover {
+  background: #fff;
+  border-radius: 35px;
+  padding: 8px 25px;
+  text-align: center;
+  -webkit-box-shadow: 0 20px 17px #709f90;
+  box-shadow: 0 20px 17px #709f90;
+  -webkit-transition: .3s ease;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contacts p {
+  color: #282828;
+  font-family: 'Lato-Bold',sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 40px;
+  position: relative;
+}
+
+.contacts img {
+  position: absolute;
+  float: right;
+  right: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts .wrapper{
+  width: 100%;
+}
+.contacts form {
+  margin: 40px auto;
+}
+
+.contacts .input {
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #FFFFFF;
+  border-radius: 23px;
+  height: 50px;
+  padding-left: 30px;
+}
+
+.contacts .input[placeholder] {
+  padding-left: 38px;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.contacts form .btn_form {
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: block;
+  max-width: 120px;
+  text-align: center;
+  color: #43CB83;
+  font-family: 'Lato-Bold',sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 20px 17px #709f90;
+  box-shadow: 0 20px 17px #709f90;
+  -webkit-transition: .3s ease;
+}
+
+.contacts form .btn_form:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #43CB83;
+}
+/*# sourceMappingURL=contacts.css.map */
+@media (max-width: 1000px) {
+  .contacts img{
+    display: none
+  }
+}
